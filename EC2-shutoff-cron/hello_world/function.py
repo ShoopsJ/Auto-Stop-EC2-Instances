@@ -1,7 +1,19 @@
 import json
+import boto
 
 # import requests
 
+region = 'us-east-1'
+ec2 = boto3.client('ec2', reqion_name=reqion)
+
+def lambda_handler(event, context)
+    instances = event["instances"].split(',')
+    action = event["action"]
+
+if action =="start":
+    print("Starting your instaces: ")
+
+    return
 
 def lambda_handler(event, context):
     """Sample pure Lambda function
